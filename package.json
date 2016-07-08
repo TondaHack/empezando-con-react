@@ -5,8 +5,7 @@
   "main": "server.js",
   "scripts": {
     "clean": "./node_modules/.bin/rimraf dist",
-    "start": "npm run clean && node server.js",
-    "build": "npm run clean && ./node_modules/.bin/webpack -p --config ./webpack.production.config.js --progress --profile --colors"
+    "start": "npm run clean && node server.js"
   },
   "repository": {
     "type": "git",

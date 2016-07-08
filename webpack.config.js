@@ -22,6 +22,9 @@ module.exports = {
             filename: 'index.html'
         }),
         new webpack.HotModuleReplacementPlugin(),
+        new webpack.DefinePlugin({
+            'DEBUG': true
+        })
     ],
     resolve: {
         extensions: ['', '.js', '.jsx']
@@ -39,7 +42,6 @@ module.exports = {
         {
             test: /\.(png|jpg|gif)$/,
             loader: 'file-loader?name=img/img-[hash:6].[ext]'
-        }
-        ]
+        }]
     }
 };

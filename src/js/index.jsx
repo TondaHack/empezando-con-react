@@ -21,7 +21,6 @@ class App extends React.Component {
         });
     };
 
-
     render() {
         const {img, name} = this.state;
 
@@ -32,7 +31,6 @@ class App extends React.Component {
                     img={img}
                 />
                 <EditUserName
-                    name={name}
                     changeName={this.changeName}
                 />
             </main>

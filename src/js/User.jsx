@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {PropTypes}  from 'react';
 
 const User = ({name, img}) => {
     return (
@@ -11,4 +11,10 @@ const User = ({name, img}) => {
     );
 };
 
+User.propTypes = {
+    name: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired
+};
+
 export default User;
+

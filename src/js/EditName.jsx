@@ -1,4 +1,4 @@
-import React,{Component} from 'react';
+import React,{Component, PropTypes} from 'react';
 
 export default class EditUserName extends Component {
     constructor(props) {
@@ -7,6 +7,10 @@ export default class EditUserName extends Component {
             name: ''
         };
     }
+
+    static propTypes = {
+        changeName: PropTypes.func.isRequired
+    };
 
     onChangeName = (event) => {
         this.setState({

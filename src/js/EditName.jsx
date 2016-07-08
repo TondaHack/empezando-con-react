@@ -43,7 +43,9 @@ export default class EditUserName extends Component {
                     value={name}
                     onChange={this.onChangeName}
                 />
-                <button onClick={this.changePersonName}>Change name</button>
+                <button onClick={this.changePersonName}>
+                    Change name
+                </button>
             </div>
         );
     }

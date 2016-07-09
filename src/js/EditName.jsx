@@ -1,6 +1,6 @@
-import React,{Component, PropTypes} from 'react';
+import React,{PropTypes} from 'react';
 
-export default class EditUserName extends Component {
+export default class EditUserName extends React.Component {
     constructor(props) {
         super(props);
         this.state = {

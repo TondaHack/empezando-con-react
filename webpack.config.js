@@ -6,6 +6,9 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     devtool: 'eval',
+    watchOptions: {
+        poll: true
+    },
     entry: [
         'webpack-hot-middleware/client?reload=true',
         './src/js/index'
